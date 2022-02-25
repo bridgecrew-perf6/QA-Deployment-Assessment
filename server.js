@@ -11,7 +11,7 @@ app.get(`/`, (req, res) => {
 })
 
 app.use(express.static(path.join(__dirname, `./public`)))
-
+ 
 const Rollbar = require('rollbar')
 const rollbar = new Rollbar({
   accessToken: 'b7496c7337f74d11ab563ceb01ac0f26',
